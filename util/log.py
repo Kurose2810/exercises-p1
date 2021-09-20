@@ -14,7 +14,7 @@ def clear():
 def section(section, decorator='---'):
     message(f'{decorator} {section} {decorator}')
 
-def trim(s, size, end='...'):
+def trim(s, size, end='...') -> str:
     lenght = len(s)
     if lenght > size:
         return s[:size - len(end)] + end

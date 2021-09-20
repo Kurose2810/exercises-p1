@@ -17,7 +17,7 @@ def headings(table):
 def data(table):
     return np.array(table[_DATA_])
 
-def sum_col(table, col, dtype=np.float):
+def sum_col(table, col, dtype=float):
     arr = np.array(table[_DATA_])
     return arr[:,col].astype(dtype).sum()
 
